@@ -40,12 +40,11 @@ body {
 
     &__button {
         margin-top: 40px;
-        padding: 15px 100px;
+        padding: 15px 50px;
         width: 100%;
         border: none;
         background-color: $primary-color;
         font-size: 18px;
-        border-radius: 20px;
         cursor: pointer;
         box-shadow: 0px 6px 5px 2px rgba(0, 0, 0, 0.6);
         transition: 0.2s all ease-in;
@@ -77,5 +76,101 @@ body {
         text-decoration: none;
         color: white;
         font-size: 20px;
+    }
+}
+
+.featured {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__container {
+        width: 60%;
+        height: 700px;
+        position: relative;
+    }
+    .featured-1 {
+        .featured__image {
+            top: 50px;
+            right: 50px;
+        }
+        .featured__text {
+            left: 50px;
+            bottom: 50px;
+        }
+    }
+    .featured-2 {
+        margin-top: 60px;
+        .featured__image {
+            bottom: 50px;
+            left: 50px;
+        }
+        .featured__text {
+            top: 50px;
+            right: 50px;
+        }
+    }
+    &__image {
+        width: 60%;
+        height: 500px;
+        position: absolute;
+        border: 4px solid rgb(246, 177, 98);
+        object-fit: cover;
+        object-position: center center;
+    }
+    &__text {
+        text-align: center;
+        width: 45%;
+        height: 350px;
+        position: absolute;
+        background-color: rgb(246, 177, 98);
+        border: 4px solid rgb(246, 177, 98);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            font-size: 18px;
+            width: 70%;
+        }
+    }
+    &__button {
+        border: none;
+        margin-top: 20px;
+        padding: 10px 50px;
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        background-color: rgb(255, 237, 217);
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s all ease-in;
+        &:hover {
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    position: relative;
+    color: white;
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        padding: 20px 0;
+        margin: 0 auto;
+
+        border-top: 2px white solid;
     }
 }

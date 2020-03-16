@@ -27,6 +27,8 @@ namespace {
         {
             parent::init();
             Requirements::css("css/style.css");
+            Requirements::css("https://unpkg.com/aos@next/dist/aos.css");
+            Requirements::javascript("https://unpkg.com/aos@next/dist/aos.js");
             // You can include any CSS or JS required by your project here.
             // See: https://docs.silverstripe.org/en/developer_guides/templates/requirements/
         }

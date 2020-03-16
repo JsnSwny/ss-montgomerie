@@ -21,5 +21,6 @@
 <body>
     <% include Nav %>
     $Layout
+    <% include Footer %>
 </body>
 </html>
