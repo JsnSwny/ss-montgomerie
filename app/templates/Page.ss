@@ -21,6 +21,12 @@
 <body>
     <% include Nav %>
     $Layout
+    <% if $Form %>
+        <div style="margin-top: 100px;">
+            $Form
+        </div>
+    <% end_if %>
+    
     <% include Footer %>
 </body>
 </html>

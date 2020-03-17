@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swap");
-$primary-color: #58e040;
-$button-hover: #bff8b4;
+$button-hover: #58e040;
+$primary-color: #9bf389;
 
 * {
     padding: 0;
@@ -62,7 +62,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 30px 0;
+    z-index: 9999;
+    background-color: rgb(22, 22, 22);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &__container {
         width: 60%;
         margin: 0 auto;
@@ -155,10 +161,11 @@ body {
 }
 
 .footer {
-    height: 200px;
+    height: 150px;
     width: 100%;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(22, 22, 22);
     position: relative;
+    bottom: 0;
     color: white;
     &__bottom {
         position: absolute;
@@ -170,7 +177,105 @@ body {
         width: 75%;
         padding: 20px 0;
         margin: 0 auto;
-
         border-top: 2px white solid;
+    }
+}
+
+.contact {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    margin-top: 80px;
+    color: white;
+    &__image-container {
+        width: 50%;
+        height: 90vh;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &-title {
+            font-size: 60px;
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            text-align: left;
+        }
+        label {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        &-input {
+            padding: 20px 20px;
+            border: none;
+            background-color: rgb(238, 238, 238);
+            border: transparent 2px solid;
+            &:focus {
+                border: $primary-color 2px solid;
+                outline: none;
+            }
+        }
+        &-button {
+            margin-top: 30px;
+            padding: 20px 0;
+            border: none;
+            cursor: pointer;
+            background-color: $primary-color;
+            font-size: 16px;
+            transition: 0.2s all ease-in;
+            &:hover {
+                background-color: $button-hover;
+            }
+        }
+    }
+}
+.menu-container {
+    margin-top: 80px;
+    .menu {
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-attachment: fixed;
+        &__title {
+            font-size: 60px;
+        }
+        &__subtext {
+            font-size: 20px;
+        }
+        &__button {
+            margin-top: 20px;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            background-color: $primary-color;
+            transition: 0.2s all ease-in;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: $button-hover;
+            }
+        }
+        &:nth-child(1) {
+            background-attachment: scroll;
+        }
     }
 }
