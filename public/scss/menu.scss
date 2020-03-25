@@ -1,0 +1,57 @@
+$button-hover: #58e040;
+$primary-color: #9bf389;
+
+.menu-container {
+    margin-top: 80px;
+    .menu {
+        height: 450px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-attachment: fixed;
+        text-align: center;
+        &__title {
+            font-size: 60px;
+        }
+        &__subtext {
+            font-size: 20px;
+        }
+        &__button {
+            margin-top: 20px;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            background-color: $primary-color;
+            transition: 0.2s all ease-in;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                background-color: $button-hover;
+            }
+        }
+        &:nth-child(1) {
+            background-attachment: scroll;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .menu-container {
+        .menu {
+            &__title {
+                font-size: 48px;
+                margin: 0 20px;
+            }
+            &__subtext {
+                font-size: 16px;
+                margin: 0 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.menu-container {
+  margin-top: 80px; }
+  .menu-container .menu {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    text-align: center; }
+    .menu-container .menu__title {
+      font-size: 60px; }
+    .menu-container .menu__subtext {
+      font-size: 20px; }
+    .menu-container .menu__button {
+      margin-top: 20px;
+      border: none;
+      padding: 10px 30px;
+      font-size: 16px;
+      background-color: #9bf389;
+      transition: 0.2s all ease-in;
+      cursor: pointer; }
+      .menu-container .menu__button:focus {
+        outline: none; }
+      .menu-container .menu__button:hover {
+        background-color: #58e040; }
+    .menu-container .menu:nth-child(1) {
+      background-attachment: scroll; }
+
+@media only screen and (max-width: 720px) {
+  .menu-container .menu__title {
+    font-size: 48px;
+    margin: 0 20px; }
+  .menu-container .menu__subtext {
+    font-size: 16px;
+    margin: 0 20px; } }

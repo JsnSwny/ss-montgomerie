@@ -6,6 +6,9 @@ namespace {
     use SilverStripe\View\Requirements;
     class PageController extends ContentController
     {
+        public function OpeningTimes() {
+            return OpeningTime::get();
+        }
         /**
          * An array of actions that can be accessed via a request. Each array element should be an action name, and the
          * permissions or conditions required to allow the user to access it.
@@ -27,6 +30,8 @@ namespace {
         {
             parent::init();
             Requirements::css("css/style.css");
+            Requirements::css("css/contact.css");
+            Requirements::css("css/menu.css");
             Requirements::css("https://unpkg.com/aos@next/dist/aos.css");
             Requirements::javascript("https://unpkg.com/aos@next/dist/aos.js");
             // You can include any CSS or JS required by your project here.
