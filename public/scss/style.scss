@@ -228,7 +228,8 @@ body {
 @media only screen and (max-width: 720px) {
     .hero {
         &__title {
-            font-size: 56px;
+            font-size: 48px;
+            line-height: 50px;
         }
         &__subtitle {
             font-size: 16px;

@@ -22,6 +22,10 @@ $primary-color: #9bf389;
         justify-content: center;
         align-items: center;
     }
+    &__map {
+        height: 500px;
+        width: 500px;
+    }
     &__form {
         display: flex;
         flex-direction: column;
@@ -99,9 +103,26 @@ fieldset {
         &__content {
             width: 100%;
             margin-top: 50px;
+            &-title {
+                font-size: 48px;
+                margin-bottom: 30px;
+            }
         }
         &__image-container {
             height: 70vh;
+        }
+        &__map {
+            height: 400px;
+            width: 400px;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .contact {
+        &__map {
+            height: 300px;
+            width: 300px;
         }
     }
 }
