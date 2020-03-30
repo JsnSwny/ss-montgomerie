@@ -8,6 +8,8 @@
 
     class HomePage extends Page {
 
+        private static $description = "Main Page with featured content";
+
         private static $db = array (
             'Restaurant' => 'Varchar',
             'Subtext' => 'Varchar',

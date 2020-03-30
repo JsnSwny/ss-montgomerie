@@ -8,6 +8,9 @@
     use SilverStripe\Forms\TextareaField;
 
     class MenuPage extends Page {
+
+        private static $description = "Page containg list of menus";
+
         private static $db = array (
             'HeaderTitle' => 'Varchar',
             'Subtitle' => 'Text'

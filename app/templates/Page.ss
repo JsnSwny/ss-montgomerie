@@ -20,13 +20,18 @@
 </head>
 <body>
     <% include Nav %>
-    $Layout
-    <% if $Form %>
-        <div style="margin-top: 100px;">
-            $Form
-        </div>
-    <% end_if %>
-    
+    <main class="container">
+        $Layout
+        <% if $Form %>
+            <div style="margin-top: 100px;">
+                $Form
+            </div>
+        <% end_if %>
+        <% if $ErrorCode %>
+            $Content
+        <% end_if %>
+        
+    </main>
     <% include Footer %>
 </body>
 </html>

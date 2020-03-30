@@ -9,13 +9,14 @@
     use SilverStripe\Forms\RequiredFields;
     use SilverStripe\Control\Email\Email;
 
+    
 
     class ContactUsPage extends Page {
 
     }
 
     class ContactUsPageController extends PageController {
-
+        private static $description = "Contact Form";
         private static $allowed_actions = array (
             'CommentForm'
         );
@@ -46,12 +47,6 @@
         }
 
         public function handleMessage($data, $form) {
-            $email = Contact::create();
-            $email->SentFromName = $data['Name'];
-            $email->SentFromEmail = $data['Email'];
-            $email->Message = $data['Message'];
-
-            $email->write();
             return $this->redirectBack();
         }
 

@@ -11,6 +11,19 @@ $headerfooter: #111111;
 
 body {
     font-family: "Sen", sans-serif;
+
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin-top: 80px;
 }
 
 .hero {
@@ -23,6 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -80px;
 
     &__title {
         color: white;
@@ -167,8 +181,6 @@ body {
     padding: 20px 0;
     width: 100%;
     background-color: $headerfooter;
-    position: relative;
-    bottom: 0;
     color: white;
     &__header {
         text-align: center;
@@ -189,6 +201,7 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
+
         &__item {
             margin: 5px 10px;
         }
